@@ -1,15 +1,40 @@
+/* Estilos generales */
 body {
-    font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #6b078a14; /* El color del fondo de la página web */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    color: #333333; /* El color del texto*/ 
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  background-color: #6b078a14;
+  margin: 50px;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
 }
+
+/* Animación de color para el título */
+@keyframes color-change {
+  0% { color: blue; }
+  50% { color: red; }
+  100% { color: blue; }
+}
+
 h1 {
-    color: #6d00a896; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
-    
+  font-size: 24px;
+  font-family: Georgia, serif;
+  animation: color-change 3s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover para mejorar la UX */
+h1:hover {
+  animation: color-change 3s infinite;
+  transform: scale(1.1);
+}
+
+/* Animación para otros elementos */
+p {
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
