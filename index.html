@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Así es como se llamará la pestaña en el navegador</title>
+    <title>JULIANA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="widget-container">
+        <a class="weatherwidget-io" href="https://forecast7.com/es/5d76n73d14/soata/" data-label_1="SOATÁ" data-label_2="Clima" data-theme="pure">SOATÁ Clima</a>
+    </div>
+    
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src="https://weatherwidget.io/js/widget.min.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","weatherwidget-io-js");
+    </script>
+
     <h1>Juliana Mojica B.</h1>
     <p>Esto es sólo un párrafo de texto</p>
     <h2>Y ésta es una cabecera un poco más pequeña</h2>
